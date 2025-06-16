@@ -21,21 +21,23 @@ This project simulates a personalized shopping assistant that recommends product
 
 ## 📁 Project Structure
 
-```text
+```
+
 purchase-prediction-streamlit/
-├── data/                             # Dataset folder (optional/manual download)
-├── saved/                            # Folder to store outputs or model files
-├── src/                              # Source code
-│   ├── _init_.py                   # Init file for module
-│   ├── app.py                        # Streamlit app interface
-│   ├── inference.py                  # Inference functions for prediction
-│   ├── model_utils.py                # Model architecture and utilities
-│   ├── preprocess_utils.py           # Data cleaning and preprocessing functions
-│   └── train.py                      # Model training script
-├── model.pth                         # Trained PyTorch model file
-├── requirements.txt                  # Python dependencies
-├── README.md                         # Project documentation
-└── .gitignore                        # Git ignore rules
+├── notebooks/
+│   └── EDA.ipynb                         # Exploratory data analysis
+├── src/
+│   ├── modeling/
+│   │   └── purchase\_prediction\_contrastive\_learning.py
+│   └── deployment/
+│       └── app.py                        # Streamlit web application
+├── data/
+│   └── Online\_Shopping\_Data.csv
+├── requirements.txt
+├── README.md
+└── main.py or run\_all.ipynb              # Main pipeline script (optional)
+
+````
 
 ---
 
@@ -111,10 +113,19 @@ random.seed(42)
 
 ---
 
+---
+
+## 🔗 Live Demo & Notebook
+
+- 🌐 **Live App**: [Streamlit Demo](https://purchase-prediction-app-3fqjntw2sygip8mgd7scfa.streamlit.app/)
+- 💻 **Google Colab**: [Open in Colab](https://colab.research.google.com/drive/1i4ZGkAK_DpP7_7a8t1VeHtHjm6gAiL0r?usp=sharing)
+
+---
+
 ## 🙌 Credits
 
 Developed by **Yap Yu Hang**, **Tham Wing Shan**, **Tan Wei Ren**, **Chiam Huai Ren**, and **Liu Yi Xian** for educational and demonstration purposes.
 
-```
+
 
 ---
